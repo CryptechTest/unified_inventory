@@ -13,6 +13,11 @@ minetest.register_privilege("ui_full", {
 	give_to_singleplayer = false,
 })
 
+minetest.register_privilege("home", {
+	description = S("Can use set home and go home from the inventory"),
+	give_to_singleplayer = true
+})
+
 local trash = minetest.create_detached_inventory("trash", {
 	--allow_put = function(inv, listname, index, stack, player)
 	--	if ui.is_creative(player:get_player_name()) then
