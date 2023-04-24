@@ -181,11 +181,11 @@ msgid "Inventory cleared!"
 msgstr ""
 
 #: register.lua
-msgid "Trash:"
+msgid "Trash"
 msgstr ""
 
 #: register.lua
-msgid "Refill:"
+msgid "Refill"
 msgstr ""
 
 #: register.lua
@@ -246,7 +246,7 @@ msgid "%s (%s)"
 msgstr ""
 
 #: register.lua
-msgid "Give me:"
+msgid "Give me"
 msgstr ""
 
 #: register.lua
@@ -256,7 +256,7 @@ msgid ""
 msgstr ""
 
 #: register.lua
-msgid "To craft grid:"
+msgid "To craft grid"
 msgstr ""
 
 #: register.lua
