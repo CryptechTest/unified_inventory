@@ -128,7 +128,7 @@ ui.register_page("waypoints", {
 			formspec[n] = string.format("image_button[%f,%f;%f,%f;%sui_%i_icon.png;%s;]",
 				ui.style_full.main_button_x, wp_bottom_row - (5-i) * ui.style_full.btn_spc,
 				ui.style_full.btn_size, ui.style_full.btn_size,
-				(i == sel) and "ui_blue_icon_background.png^" or "",
+				(i == sel) and "ui_grey_icon_background.png^" or "",
 				i, sw)
 			formspec[n+1] = "tooltip["..sw..";"..S("Select Waypoint #@1", i).."]"
 			n = n + 2
@@ -149,7 +149,7 @@ ui.register_page("waypoints", {
 				waypoint.active and S("Hide waypoint") or S("Show waypoint")
 			},
 			toggle_display_pos = {
-				waypoint.display_pos and "ui_green_icon_background.png^ui_xyz_icon.png" or "ui_red_icon_background.png^ui_xyz_icon.png^(ui_no.png^[transformR90)",
+				waypoint.display_pos and "ui_xyz_icon.png" or "ui_xyz_icon.png^(ui_no.png^[transformR90)",
 				waypoint.display_pos and S("Hide coordinates") or S("Show coordinates")
 			},
 			toggle_color = {
