@@ -149,7 +149,7 @@ ui.register_page("waypoints", {
 				waypoint.active and S("Hide waypoint") or S("Show waypoint")
 			},
 			toggle_display_pos = {
-				waypoint.display_pos and "ui_xyz_icon.png" or "ui_xyz_icon.png^(ui_no.png^[transformR90)",
+				waypoint.display_pos and "ui_xyz_icon.png" or "ui_xyz_icon.png^(ui_no.png)",
 				waypoint.display_pos and S("Hide coordinates") or S("Show coordinates")
 			},
 			toggle_color = {
