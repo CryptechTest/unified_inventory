@@ -268,9 +268,18 @@ if minetest.get_modpath("farming") ~= nil then
 	minetest.register_craft({
 		output = "unified_inventory:bag_small",
 		recipe = {
-			{"",           "farming:string", ""},
+			{"",           "group:string", ""},
 			{"group:wool", "group:wool",     "group:wool"},
 			{"group:wool", "group:wool",     "group:wool"},
+		},
+	})
+
+	minetest.register_craft({
+		output = "unified_inventory:bag_small",
+		recipe = {
+			{"",           "group:string", ""},
+			{"group:pillow", "group:pillow",     "group:pillow"},
+			{"group:pillow", "group:pillow",     "group:pillow"},
 		},
 	})
 
@@ -278,8 +287,8 @@ if minetest.get_modpath("farming") ~= nil then
 		output = "unified_inventory:bag_medium",
 		recipe = {
 			{"",               "",                            ""},
-			{"farming:string", "unified_inventory:bag_small", "farming:string"},
-			{"farming:string", "unified_inventory:bag_small", "farming:string"},
+			{"group:string", "unified_inventory:bag_small", "group:string"},
+			{"group:string", "unified_inventory:bag_small", "group:string"},
 		},
 	})
 
@@ -287,8 +296,8 @@ if minetest.get_modpath("farming") ~= nil then
 		output = "unified_inventory:bag_large",
 		recipe = {
 			{"",               "",                             ""},
-			{"farming:string", "unified_inventory:bag_medium", "farming:string"},
-			{"farming:string", "unified_inventory:bag_medium", "farming:string"},
+			{"group:string", "unified_inventory:bag_medium", "group:string"},
+			{"group:string", "unified_inventory:bag_medium", "group:string"},
 	    },
 	})
 end
